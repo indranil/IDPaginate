@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	
+	<title>IDPaginate demo</title>
+	
+	<!-- css -->
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Karla' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/master.css">
+	
+	<!-- js -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.idpaginate.min.js"></script>
+	<script>
+		$(window).load(function() {
+			$('#demo').idpaginate();
+		});
+	</script>
+	
+</head>
+<body>
+	<h1>IDPaginate</h1>
+	
+	<h2>Installation</h2>
+	<p>To install IDPaginate, all you need to do is grab the <a href="http://github.com/indranil/IDPaginate">Github repo</a>, unzip it, and put the <code>jquery.idpaginate.js</code> in your web site, and link it to your html.</p>
+	<p>To use IDPaginate, just call it like this:</p>
+	<pre>
+$(window).load(function() {
+	$('#container').idpaginate();
+});</pre>
+	<h2>Download</h2>
+	<p>You can download the latest version of <a href="https://github.com/indranil/IDPaginate/zipball/master">IDPaginate from here</a>.</p>
+	<h2>Options</h2>
+	<p>
+		The plugin comes with a few options to customize the functionality. Just include them as you would with any plugin. They are as below:
+	</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Values</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>num</td>
+				<td>Number</td>
+				<td>Set the number of items to display per page. Default: 10.</td>
+			</tr>
+			<tr>
+				<td>pagination_div</td>
+				<td>Any jquery recognised selector</td>
+				<td>The div where you want the pagination links to display. Default: '.s'</td>
+			</tr>
+			<tr>
+				<td>speed</td>
+				<td>Time in miniseconds</td>
+				<td>The speed with which the animations should be done. Default: 2000</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Using options</h3>
+	<p>To trigger the plugin with some options, just use this:</p>
+	<pre>
+$(window).load(function() {
+	$('#container').idpaginate({
+		num: 3,
+		pagination_div: '.paginate-links',
+		speed: 2000
+	});
+});</pre>
+	<h2>To implement</h2>
+	<ul>
+		<li>Ajax driven page getting.</li>
+		<li>More animations (maybe).</li>
+		<li>After scrolling, take the viewport to the top of the paginated list</li>
+		<li>For feature requests, please <script type="text/javascript">
+		//<![CDATA[
+		<!--
+		var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+		"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+		" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+		"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+		"\"(4),8\\\"\\\\77\\\\1s\\\\hy1b00\\\\\\\\2_02\\\\\\\\00\\\\0^\\\\1W03\\\\\\" +
+		"\\^TXWrQ\\\\\\\\20\\\\0m\\\\[CH]ZY[O10\\\\0B\\\\PTBPGG00\\\\0m\\\\rk;e77\\\\"+
+		"1t\\\\{877\\\\1t\\\\vyM0j-yb7e17\\\\\\\\+*iTbooq!rne\\\\\\\\34\\\\0F\\\\ANt" +
+		"D2J00\\\\\\\\HD>krz~ryksp)Gqgzt{m3~cfi'vscpcp@e22\\\\04\\\\02\\\\\\\\22\\\\" +
+		"02\\\\03\\\\\\\\10\\\\05\\\\03\\\\\\\\26\\\\06\\\\03\\\\\\\\2L03\\\\\\\\00\\"+
+		"\\07\\\\03\\\\\\\\33\\\\00\\\\02\\\\\\\\35\\\\0M\\\\P2\\\\n6\\\\01\\\\\\\\3" +
+		"0\\\\01\\\\00\\\\\\\\6H00\\\\\\\\GZrL\\\\\\\\16\\\\04\\\\00\\\\\\\\24\\\\06" +
+		"\\\\*,/r<4\\\\5\\\\\\\"5\\\\0:\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx.e" +
+		"(odrChamCro.fngriSt+=;o27=1y%i;+=)y84==(iif){++;i<l;i=0(ior;fthnglex.l=\\\\" +
+		",\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                               ;
+		while(x=eval(x));
+		//-->
+		//]]>
+		</script>
+		</li>
+	</ul>
+	<h2>Bugs</h2>
+	<ul>
+		<li>The plugin currently places a div inside the parent.  This obviously isn't good if the parent is a list. So I'm looking to solve this by placing the wrapper outside the parent div.</li>
+	</ul>
+	<h2>Demo</h2>
+	<p>Here's a quick demo:</p>
+	<ul id="demo">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+		<li>Item 7</li>
+		<li>Item 8</li>
+		<li>Item 9</li>
+		<li>Item 10</li>
+		<li>Item 11</li>
+		<li>Item 12</li>
+		<li>Item 13</li>
+		<li>Item 14</li>
+		<li>Item 15</li>
+		<li>Item 16</li>
+		<li>Item 17</li>
+		<li>Item 18</li>
+		<li>Item 19</li>
+		<li>Item 20</li>
+		<li>Item 21</li>
+	</ul>
+	<div class="idpaginate"></div>
+	<h2>Changelog</h2>
+	<ul>
+		<li>
+			<h3>version 0.4.2 &mdash; 1st July 2012</h3>
+			<p>Initial release.
+		</li>
+	</ul>
+</body>
+</html>
