@@ -80,9 +80,19 @@ p code, pre {
 	background: #F5FFAF;
 }
 
+/* Some light pagination link css */
 .idpaginate {
 	padding-bottom: 20px;
 }
 .idpaginate a {
 	margin-right: 5px;
+}
+.idpaginate .idpaginate-next-disabled, .idpaginate .idpaginate-prev-disabled {
+	color: #999;
+	background: #fff;
+	cursor: default;
+}
+.idpaginate .idpaginate-page-current {
+	background: #e20000;
+	color: #F5FFAF;
 }
