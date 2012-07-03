@@ -80,6 +80,10 @@ p code, pre {
 	background: #F5FFAF;
 }
 
+p.copy {
+	font-size: 12px;
+}
+
 /* Some light pagination link css */
 .idpaginate {
 	padding-bottom: 20px;
